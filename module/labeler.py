@@ -140,6 +140,7 @@ class TaperedDetectionLabeller(SupervisedLabeller):
 
                 # print(mask, starts, ends)
 
+                # ============================================================
                 # The main difference from original:
                 # Add gaussian tails to detections
                 for i, s, e in zip(np.arange(len(mask))[mask], starts, ends):
@@ -163,6 +164,7 @@ class TaperedDetectionLabeller(SupervisedLabeller):
                         )
 
                     y[i, 0, s:e] = 1
+                # ============================================================
 
         else:
             raise ValueError(
