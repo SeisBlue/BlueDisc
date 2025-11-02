@@ -2,7 +2,6 @@
 
 This repository reproduces the paper’s key finding: a cGAN-based shape-then-align strategy fixes amplitude suppression in seismic S-phase picking.
 
-- Paper source: `sn-article.tex`
 - Core modules: `module/generator.py` (PhaseNet wrapper), `module/discriminator.py` (BlueDisc), `module/gan_model.py` (training loop)
 - Analysis scripts: `loss_landscape_analysis.py`, `plot_compare_*.py` for figure-style comparisons
 
@@ -69,4 +68,4 @@ Inference and evaluation
 - “Dataset class not found”: ensure the name matches SeisBench (e.g., `Instance`, `ETHZ`).
 - MLflow connection errors: make sure the server runs on the host/port used in scripts (127.0.0.1 or 0.0.0.0 on port 5000). Use `--backend-store-uri ./mlruns --default-artifact-root ./mlruns` so artifacts land under this repo.
 
-For background, results, and design rationale, please read the paper in `docs/sn-article.tex`.
+For deeper background, results, and design rationale, please refer to the accompanying paper.

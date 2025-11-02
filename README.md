@@ -2,7 +2,7 @@
 
 This repo is a minimal, reproducible implementation to validate the paper “Diagnosing and Breaking Amplitude Suppression in Seismic Phase Picking Through Adversarial Shape Learning.” It augments a PhaseNet generator with a lightweight conditional discriminator (BlueDisc) to enforce shape-then-align learning, which eliminates the 0.5-amplitude suppression band and increases effective S-phase detections.
 
-- Paper: see `docs/sn-article.tex` (title and abstract included) and references within
+- Paper: see the accompanying paper for full details
 - Core idea: combine BCE (temporal anchoring) with a cGAN shape critic to decouple shape learning from temporal alignment
 - Scope: this code is for verification only; for details, please refer to the paper
 
@@ -75,6 +75,6 @@ Outputs are saved under `mlruns/<experiment>/<run_id>/artifacts/` (waveforms, la
 - `01_training.py`, `02_inference.py`, `03_evaluation.py`: train → infer → evaluate
 - `module/`: generator (PhaseNet wrapper), discriminator (BlueDisc), GAN training loop, data pipeline, logger
 - `mlruns/`: MLflow experiments and artifacts
-- `docs/`: paper source and short documentation
+- `docs/`: short documentation
 
 For CLI details, tips, and caveats, see `docs/README.md`. Please cite the paper when using this code.
