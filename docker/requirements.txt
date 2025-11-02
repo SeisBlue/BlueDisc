@@ -1,0 +1,10 @@
+h5py
+matplotlib
+mlflow
+obspy
+pandas
+scikit-learn
+scipy
+seaborn
+seisbench
+tqdm
