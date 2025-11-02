@@ -71,17 +71,27 @@ The repository includes several plotting scripts to analyze model behavior durin
 
 ### Training-based visualization (using logged tracking data)
 During training, the model automatically logs sample predictions at each step. You can visualize training progression using:
-- `plot_compare_time.py`: visualize how predictions evolve over training steps for a specific sample
-- `plot_compare_shape.py`: compare prediction shapes at selected training steps
 - `plot_compare_runs.py`: side-by-side comparison of predictions from different runs at the same step
+
+<img src="docs/fig/compare_runs.png" alt="compare runs" width="400" />
+
+- `plot_compare_shape.py`: compare prediction shapes at selected training steps
+- `plot_compare_time.py`: visualize how predictions evolve over training steps for a specific sample
+
+<img src="docs/fig/training_dynamics.png" alt="training dynamics" width="400" />
+
 
 These scripts work directly with the tracking data logged during training (`mlruns/<experiment>/<run_id>/artifacts/track/`).
 
 ### Inference-based visualization (requires test dataset predictions)
 - `plot_compare_peak.py`: analyze peak detection accuracy by comparing predicted peaks with ground-truth labels. **Requires running both inference (`02_inference.py`) and evaluation (`03_evaluation.py`)** on the test dataset first. The evaluation step generates matching results (`matching_results/` CSVs) that pair each predicted peak with its corresponding label peak, enabling quantitative analysis of detection performance.
 
+<img src="docs/fig/s_distribution.png" alt="s_distribution" width="400" />
+
 ### Data exploration
 - `plot_compare_phase.py`: visualize P and S phase label arrangements in the dataset. This is a data exploration tool independent of model training.
+
+<img src="docs/fig/compare_p_s.png" alt="compare_p_s" width="400" />
 
 ## Repo layout
 - `01_training.py`, `02_inference.py`, `03_evaluation.py`: train → infer → evaluate pipeline
