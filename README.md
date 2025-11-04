@@ -16,7 +16,7 @@ Prereqs
 - MLflow 2.x (already in requirements)
 - GPU: NVIDIA GPU recommended for training
 
-> **Reproducibility Note**: GPU architecture affects training reproducibility. Newer GPUs (e.g., RTX 3090) support lower-precision computation and show better convergence than older models (e.g., GTX 1080 Ti) in our tests. Results in the paper were obtained using RTX 3090.
+> **Reproducibility Note**: GPU architecture affects GAN convergence. Newer GPUs (e.g., RTX 3090) support lower-precision computation and show better convergence than older models (e.g., GTX 1080 Ti) in our tests. Results in the paper were obtained using RTX 3090. When using different GPU architectures, you may need to adjust the `--data-weight` (λ) parameter to achieve similar results.
 
 Setup
 ```bash
