@@ -14,6 +14,9 @@ Prereqs
 - Python 3.10+
 - PyTorch (install per your platform: https://pytorch.org/get-started/locally/)
 - MLflow 2.x (already in requirements)
+- GPU: NVIDIA GPU recommended for training (experiments were conducted on RTX 3090)
+
+> **Reproducibility Note**: GPU architecture can affect numerical precision and bit-level reproducibility. Results presented in the paper were obtained using NVIDIA RTX 3090. Different GPU models may produce slightly different numerical results due to variations in floating-point operations, though the overall trends and conclusions should remain consistent.
 
 Setup
 ```bash
