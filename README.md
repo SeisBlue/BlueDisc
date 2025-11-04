@@ -16,7 +16,7 @@ Prereqs
 - MLflow 2.x (already in requirements)
 - GPU: NVIDIA GPU recommended for training
 
-> **GPU Note**: Different GPU architectures support different precision options. Newer GPUs (e.g., RTX 3090) support lower-precision computation and show better convergence than older models (e.g., GTX 1080 Ti) in our tests. Results in the paper were obtained using RTX 3090.
+> **Reproducibility Note**: GPU architecture affects training reproducibility. Newer GPUs (e.g., RTX 3090) support lower-precision computation and show better convergence than older models (e.g., GTX 1080 Ti) in our tests. Results in the paper were obtained using RTX 3090.
 
 Setup
 ```bash
