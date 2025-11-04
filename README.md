@@ -1,6 +1,6 @@
 # BlueDisc: Adversarial Shape Learning for Seismic Phase Picking
 
-> **Note**: SeisBlue Discriminator (BlueDisc) is a core component of the [SeisBlue](https://github.com/SeisBlue/SeisBlue)
+> **Note**: BlueDisc (SeisBlue Discriminator) is a core component of the [SeisBlue](https://github.com/SeisBlue/SeisBlue)
 
 This repo is a minimal, reproducible implementation to validate the paper "Diagnosing and Breaking Amplitude Suppression in Seismic Phase Picking Through Adversarial Shape Learning." It augments a PhaseNet generator with a lightweight conditional discriminator (BlueDisc) to enforce label shape learning, which eliminates the 0.5-amplitude suppression band and increases effective S-phase detections.
 
