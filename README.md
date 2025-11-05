@@ -107,7 +107,7 @@ These scripts work directly with the tracking data logged during training (`mlru
 - `plot_*.py`: visualization scripts for analyzing training, inference, and data
 - `mlruns/`: MLflow experiments and artifacts
 - `docs/`: short documentation
-- `loss_landscape/`: standalone loss-landscape simulations (BCE toy experiments)
+- [loss_landscape/](loss_landscape): standalone loss-landscape simulations (BCE toy experiments)
   - `loss_landscape_analysis.py`: BCE loss surface visualization (height vs. time/peak)
   - `no_model_bce_test.py`: point-wise vs Gaussian-parameterized BCE optimization
 
