@@ -159,3 +159,4 @@ Key papers referenced in this work:
 - **INSTANCE Dataset**: Michelini, A., Cianetti, S., Gaviano, S., et al. (2021). INSTANCE–the Italian seismic dataset for machine learning. *Earth System Science Data*, 13(12), 5509-5544.  
   DOI: [10.5194/essd-13-5509-2021](https://doi.org/10.5194/essd-13-5509-2021)
 
+## Contributor List
